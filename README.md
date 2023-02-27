@@ -4,7 +4,11 @@ Paratope prediction and similarity via protein language models
 
 You need to have ANARCI (https://opig.stats.ox.ac.uk/webapps/newsabdab/sabpred/anarci/) installed for CDR annotation.
 
+Install dependencies:
 
+```
+pip install transformers
+pip install datasets
 ```
 python annotate.py chains.csv chains_ann.csv #generates annotated sequence file.
 cd paratope_prediction
