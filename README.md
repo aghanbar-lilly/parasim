@@ -10,6 +10,10 @@ Install dependencies:
 pip install transformers
 pip install datasets
 ```
+Sample dataset file is included as supplementary info for the paper.
+
+Run annotation on the sequence data set file and run paratope prediction (you need to train your paratope prediction model first):
+```
 python annotate.py chains.csv chains_ann.csv #generates annotated sequence file.
 cd paratope_prediction
 python bert_finetune.py --predict_only 1 --lstm 0 --data <trainingset> --predict_data <test data> --predict_model results/<trained model checkpoint>
