@@ -21,7 +21,7 @@ python bert_finetune.py --predict_only 1 --lstm 0 --data <trainingset> --predict
 There is a `predictions.csv` file generated afterwards. Copy it to the current directory and generate the sequence file with predicted probabilities.
 ```
 cp paratope_prediction/predictions.csv .
-python generate_par_dataset.py chains_ann.csv predictions.csv #generates chains_ann.csvpredicted_pars.csv, needed for next step.
+python generate_par_dataset.py chains_ann.csv predictions.csv #generates chains_ann.csvpredicted_pars.csv, sequence dataset file with probability values, needed for next step.
 python gen_fps.py chains_ann.csvpredicted_pars.csv #generates embeddings npy file
 python gen_distmat.py #generates distance matrix (as csv)
 ```
