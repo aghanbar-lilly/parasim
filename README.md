@@ -7,7 +7,7 @@ You need to have ANARCI (https://opig.stats.ox.ac.uk/webapps/newsabdab/sabpred/a
 Install dependencies:
 
 ```
-pip install transformers
+pip install transformers==4.5.1
 pip install datasets
 ```
 Sample dataset file is included as supplementary info for the paper.
